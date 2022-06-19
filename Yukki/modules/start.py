@@ -16,7 +16,7 @@ from Yukki import app, boot, botname
 from Yukki.helpers import get_readable_time
 
 
-@app.on_message(filters.command(["start", "ping"]))
+@app.on_message(filters.command(["lodaxd", "randisex"]))
 async def on_start(_, message: Message):
     bot_uptime = int(time.time() - boot)
     Uptime = get_readable_time(bot_uptime)
